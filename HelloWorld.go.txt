@@ -1,9 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"html"
+	"time"
+)
 
 func main() {
 	fmt.Print("Hello, playground")
 	fmt.Println("Hello, playground")
-	fmt.Print("Hello, playground")
+	fmt.Println("Hello, playground")
+	var str string = html.EscapeString("<p>OK</p>")
+	fmt.Println(str)
+	fmt.Println(time.Now());
 }
