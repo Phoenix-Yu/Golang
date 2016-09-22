@@ -1,0 +1,14 @@
+package main
+
+import (
+	"fmt"
+	"html"
+)
+
+func main() {
+	fmt.Print("Hello, playground")
+	fmt.Println("Hello, playground")
+	fmt.Println("Hello, playground")
+	var str string = html.EscapeString("<p>OK</p>")
+	fmt.Println(str)
+}
